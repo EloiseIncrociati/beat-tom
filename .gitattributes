@@ -1,0 +1,20 @@
+# Normalisation des fins de ligne.
+#
+# `text=auto`  : Git detecte les fichiers texte et stocke TOUJOURS des LF
+#                dans l'historique, quelle que soit la machine qui commite.
+# `eol=lf`     : les LF sont aussi restitues tels quels dans la copie de
+#                travail, y compris sous Windows.
+#
+# Ce que ca evite, concretement :
+#  - le differentiel fantome ou un fichier apparait modifie de bout en bout
+#    alors que seules les fins de ligne ont change, parce qu'une machine
+#    Windows et une machine macOS n'ecrivent pas la meme chose ;
+#  - les avertissements permanents « LF will be replaced by CRLF » ;
+#  - les conflits de fusion integraux sur des fichiers que personne n'a
+#    touches ;
+#  - les scripts shell et hooks Git rendus inexecutables par des CRLF.
+#
+# Ce fichier est place AVANT que le depot ne grossisse : renormaliser plus
+# tard oblige a reecrire tous les fichiers suivis d'un coup, ce qui produit
+# exactement le differentiel illisible que la regle cherche a eviter.
+* text=auto eol=lf

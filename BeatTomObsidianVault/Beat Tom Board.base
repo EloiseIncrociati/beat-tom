@@ -1,0 +1,102 @@
+properties:
+  note.id:
+    displayName: ID
+  note.platform:
+    displayName: Surface
+  note.type:
+    displayName: Type
+  note.lot:
+    displayName: Lot
+  note.status:
+    displayName: Statut
+  note.priority:
+    displayName: Priorite
+  note.date:
+    displayName: Date
+  note.assignee:
+    displayName: Assigne
+views:
+  - type: kanban-view
+    name: Status
+    filters:
+      and:
+        - file.inFolder("Board")
+        - note.type == "feature"
+    groupByProperty: note.status
+    swimlaneProperty: note.lot
+    quickAddFolder: Board
+    wrapPropertyValues: false
+    columnOrders:
+      - Roadmap
+      - To Do
+      - Doing
+      - Done
+    columnColors:
+      Doing: yellow
+      Done: green
+      Uncategorized: red
+    cardOrders: {}
+    order:
+      - note.id
+      - note.platform
+      - note.lot
+      - note.priority
+  - type: kanban-view
+    name: Bugs
+    filters:
+      and:
+        - file.inFolder("Board")
+        - note.type == "bug"
+    groupByProperty: note.status
+    swimlaneProperty: note.priority
+    quickAddFolder: Board
+    columnOrders:
+      - Roadmap
+      - To Do
+      - Doing
+      - Done
+    columnColors:
+      Doing: yellow
+      Done: green
+      Uncategorized: red
+    cardOrders: {}
+    order:
+      - note.id
+      - note.platform
+      - note.priority
+  - type: kanban-view
+    name: Priorite
+    filters:
+      and:
+        - file.inFolder("Board")
+    groupByProperty: note.priority
+    quickAddFolder: Board
+    columnOrders:
+      - High
+      - Medium
+      - Low
+    columnColors:
+      Uncategorized: red
+    cardOrders: {}
+    order:
+      - note.id
+      - note.platform
+      - note.status
+  - type: table
+    name: Vue
+    filters:
+      and:
+        - file.inFolder("Board")
+    order:
+      - note.id
+      - file.name
+      - note.platform
+      - note.type
+      - note.lot
+      - note.status
+      - note.priority
+      - note.date
+      - note.assignee
+    sort:
+      - property: note.id
+        direction: ASC

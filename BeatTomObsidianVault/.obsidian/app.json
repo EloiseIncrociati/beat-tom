@@ -1,0 +1,9 @@
+{
+  "attachmentFolderPath": "Upload",
+  "useMarkdownLinks": false,
+  "newLinkFormat": "shortest",
+  "alwaysUpdateLinks": true,
+  "showUnsupportedFiles": true,
+  "promptDelete": false,
+  "trashOption": "local"
+}

@@ -1,0 +1,118 @@
+# ==========================================================================
+# Node
+# ==========================================================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm/
+.yarn/cache/
+.yarn/install-state.gz
+.eslintcache
+*.tsbuildinfo
+
+# ==========================================================================
+# Expo / React Native
+# ==========================================================================
+.expo/
+.expo-shared/
+web-build/
+
+# Dossiers natifs produits par `expo prebuild`. Regenerables a l'identique
+# depuis app.json, donc artefacts et non sources.
+/beat-tom-mobile/ios/
+/beat-tom-mobile/android/
+
+# Metro
+.metro-health-check*
+.metro-cache/
+
+# Signature et provisioning (jamais dans un depot)
+*.jks
+*.keystore
+*.p8
+*.p12
+*.mobileprovision
+
+# ==========================================================================
+# NestJS
+# ==========================================================================
+dist/
+coverage/
+.nest/
+
+# ==========================================================================
+# Prisma
+# ==========================================================================
+# Le client Prisma est GENERE depuis schema.prisma a chaque install.
+# C'est un artefact : il ne doit jamais entrer dans l'historique.
+.prisma/
+/beat-tom-api/src/generated/
+/beat-tom-api/generated/
+
+# prisma/migrations/ est VOLONTAIREMENT VERSIONNE.
+# Une migration n'est pas un artefact : c'est le contrat d'evolution du
+# schema, la seule chose qui permet de rejouer l'etat de la base a
+# l'identique sur une autre machine et dans le temps. Aucune regle
+# d'exclusion ne doit la couvrir.
+
+# ==========================================================================
+# Secrets
+# ==========================================================================
+.env
+.env.*
+!.env.example
+*.pem
+
+# ==========================================================================
+# Systeme
+# ==========================================================================
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ==========================================================================
+# Obsidian
+# ==========================================================================
+# Arbitrage retenu pour le vault :
+#
+# VERSIONNE  - les JSON de configuration ecrits par T-001
+#              (app.json, appearance.json, core-plugins.json,
+#              community-plugins.json, templates.json).
+#              Ils constituent le setup reproductible du vault : un clone
+#              retrouve le meme board, les memes plugins actifs, le meme
+#              dossier de modeles.
+#
+# IGNORE     - l'etat de disposition des panneaux. Propre a chaque machine,
+#              reecrit par Obsidian a chaque changement d'onglet, donc
+#              source de bruit permanent dans les differentiels.
+BeatTomObsidianVault/.obsidian/workspace.json
+BeatTomObsidianVault/.obsidian/workspace-mobile.json
+
+# IGNORE     - le code des plugins communautaires et des themes.
+#              Consequence assumee : une machine qui clone doit reinstaller
+#              les plugins. La liste, elle, est versionnee dans
+#              community-plugins.json, donc l'information n'est pas perdue.
+#
+# VERSIONNE  - en revanche, les data.json des plugins : ce n'est pas du code
+#              tiers, c'est la configuration du vault (reglages de Tasks,
+#              de Minimal Settings...). Ils appartiennent au setup
+#              reproductible au meme titre que les JSON de .obsidian/.
+#
+# Le motif est en plugins/*/* et NON en plugins/ : une negation ne peut pas
+# reinclure un fichier dont un dossier parent est exclu. Git n'entre pas
+# dans un dossier exclu, il ne descend pas dedans, donc il n'evalue jamais
+# la regle de reinclusion a l'interieur. En excluant le CONTENU des dossiers
+# de plugins (plugins/*/*) plutot que les dossiers eux-memes, chaque chemin
+# reste visible et la negation sur data.json peut s'appliquer.
+BeatTomObsidianVault/.obsidian/plugins/*/*
+!BeatTomObsidianVault/.obsidian/plugins/*/data.json
+BeatTomObsidianVault/.obsidian/themes/
