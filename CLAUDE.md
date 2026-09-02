@@ -113,7 +113,10 @@ beat-tom/
 ├── BeatTomObsidianVault/             <- suivi de projet
 │   ├── CLAUDE.md
 │   ├── Beat Tom Board.base           <- kanban Bases, 4 vues (Status, Bugs, Priorite, Vue)
-│   ├── Board/                        <- 1 .md par carte, vide au démarrage (.gitkeep)
+│   ├── Board/                        <- 40 cartes de roadmap, 1 .md par carte.
+│   │                                    Nommage `<id> <titre>.md` (ex. `F-006 création
+│   │                                    de projet.md`). Ne pas lister ici, la source
+│   │                                    est le dossier et le board.
 │   ├── Wiki/                         <- Fonctionnement du vault.md, Liens utiles.md,
 │   │                                    Cahier des charges.md, Modele de donnees.md,
 │   │                                    Contrat API.md, Strategie de synchronisation.md,

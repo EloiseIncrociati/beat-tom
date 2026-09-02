@@ -19,7 +19,7 @@ Tout ce qui n'est pas écrit ici n'existe pas.
 BeatTomObsidianVault/
 ├── CLAUDE.md                 <- ce fichier, contrat de fonctionnement du vault
 ├── Beat Tom Board.base       <- kanban Bases, à la racine du vault
-├── Board/                    <- 1 .md par carte, vide au démarrage
+├── Board/                    <- 40 cartes, 1 .md par carte, `<id> <titre>.md`
 ├── Wiki/                     <- doc libre humaine
 │   ├── Fonctionnement du vault.md
 │   ├── Liens utiles.md
@@ -51,7 +51,7 @@ BeatTomObsidianVault/
 ```
 
 Les dossiers vides du vault portent un `.gitkeep` pour survivre au clone :
-`Board/`, `Upload/`, `Claude/Prompts/`, `Claude/log/audits/`.
+`Upload/`, `Claude/Prompts/`, `Claude/log/audits/`.
 
 Non versionnés : `.obsidian/workspace.json` (état d'interface, propre à la machine),
 le code des plugins et `.obsidian/themes/` (à réinstaller après clone). Les
@@ -62,7 +62,7 @@ configuration de vault, pas du code tiers.
 
 | Dossier | Rôle |
 |---|---|
-| `Board/` | une note par carte. Le kanban n'est qu'une vue de ces notes. |
+| `Board/` | une note par carte, nommée `<id> <titre>.md`. Le kanban n'est qu'une vue de ces notes. |
 | `Wiki/` | documentation humaine durable, écrite par Liz. Claude ne remplit pas ces fichiers d'un contenu inventé. |
 | `Templates/` | modèles instanciés par le plugin core Templates. |
 | `Upload/` | pièces jointes, alimenté automatiquement par Obsidian. |
