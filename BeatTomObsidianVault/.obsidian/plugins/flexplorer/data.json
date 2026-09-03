@@ -1,0 +1,378 @@
+{
+  "items": {
+    "/": {
+      "isPinned": false,
+      "isHidden": false,
+      "sortOrder": "custom",
+      "customOrder": [
+        "Beat Tom Board.base",
+        "Claude",
+        "Board",
+        "CLAUDE.md",
+        "Upload",
+        "Templates",
+        "Wiki"
+      ]
+    },
+    "Beat Tom Board.base": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Claude": {
+      "isPinned": false,
+      "isHidden": false,
+      "sortOrder": "custom",
+      "customOrder": [
+        "log",
+        "plugins",
+        "Prompts"
+      ]
+    },
+    "Claude/log": {
+      "isPinned": false,
+      "isHidden": false,
+      "sortOrder": "custom",
+      "customOrder": [
+        "audits",
+        "sessions"
+      ]
+    },
+    "Claude/log/audits": {
+      "isPinned": false,
+      "isHidden": false,
+      "sortOrder": "custom",
+      "customOrder": []
+    },
+    "Claude/log/sessions": {
+      "isPinned": false,
+      "isHidden": false,
+      "sortOrder": "custom",
+      "customOrder": [
+        "01-09-2026.md",
+        "02-09-2026.md"
+      ]
+    },
+    "Claude/log/sessions/01-09-2026.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Claude/log/sessions/02-09-2026.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Claude/plugins": {
+      "isPinned": false,
+      "isHidden": false,
+      "sortOrder": "custom",
+      "customOrder": [
+        "core-bases.md",
+        "kanban-bases-view.md",
+        "core-templates.md",
+        "tasks.md"
+      ]
+    },
+    "Claude/plugins/core-bases.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Claude/plugins/kanban-bases-view.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Claude/plugins/core-templates.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Claude/plugins/tasks.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Claude/Prompts": {
+      "isPinned": false,
+      "isHidden": false,
+      "sortOrder": "custom",
+      "customOrder": []
+    },
+    "Board": {
+      "isPinned": false,
+      "isHidden": false,
+      "sortOrder": "custom",
+      "customOrder": [
+        "B-001 initialisation NestJS.md",
+        "B-002 PostgreSQL et Prisma.md",
+        "B-003 schéma de données initial.md",
+        "B-004 GraphQL code-first.md",
+        "B-005 authentification.md",
+        "B-006 resolvers métier.md",
+        "B-007 durcissement.md",
+        "F-001 initialisation Expo.md",
+        "B-008 endpoints de synchronisation.md",
+        "F-002 development build EAS.md",
+        "F-003 design system.md",
+        "F-004 stores et persistance locale.md",
+        "F-005 navigation et routes.md",
+        "F-006 création de projet.md",
+        "F-008 grille du calendrier.md",
+        "F-007 enregistrement de session.md",
+        "F-010 fonctions d'agrégation.md",
+        "F-011 écran de statistiques.md",
+        "F-009 détail d'une journée.md",
+        "F-012 menu d'action rapide.md",
+        "F-013 tests des agrégations.md",
+        "F-014 client GraphQL.md",
+        "F-015 écrans d'authentification.md",
+        "F-016 file d'attente outbox.md",
+        "F-017 réconciliation.md",
+        "F-018 tests de synchronisation.md",
+        "F-019 archivage de projet.md",
+        "F-020 session active.md",
+        "F-021 rappel hebdomadaire.md",
+        "F-022 export partageable.md",
+        "F-023 tags rapides.md",
+        "F-024 rappel d'inactivité.md",
+        "F-025 vue système solaire.md",
+        "T-001 dépôt, vault et config Claude Code.md",
+        "T-002 intégration continue.md",
+        "T-003 mascotte Tom.md",
+        "T-004 tests de bout en bout.md",
+        "T-005 distribution.md",
+        "T-006 déploiement de l'API.md",
+        "T-007 observabilité.md"
+      ]
+    },
+    "Board/B-001 initialisation NestJS.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/B-002 PostgreSQL et Prisma.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/B-003 schéma de données initial.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/B-004 GraphQL code-first.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/B-005 authentification.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/B-006 resolvers métier.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/B-007 durcissement.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/F-001 initialisation Expo.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/B-008 endpoints de synchronisation.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/F-002 development build EAS.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/F-003 design system.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/F-004 stores et persistance locale.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/F-005 navigation et routes.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/F-006 création de projet.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/F-008 grille du calendrier.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/F-007 enregistrement de session.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/F-010 fonctions d'agrégation.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/F-011 écran de statistiques.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/F-009 détail d'une journée.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/F-012 menu d'action rapide.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/F-013 tests des agrégations.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/F-014 client GraphQL.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/F-015 écrans d'authentification.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/F-016 file d'attente outbox.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/F-017 réconciliation.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/F-018 tests de synchronisation.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/F-019 archivage de projet.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/F-020 session active.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/F-021 rappel hebdomadaire.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/F-022 export partageable.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/F-023 tags rapides.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/F-024 rappel d'inactivité.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/F-025 vue système solaire.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/T-001 dépôt, vault et config Claude Code.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/T-002 intégration continue.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/T-003 mascotte Tom.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/T-004 tests de bout en bout.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/T-005 distribution.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/T-006 déploiement de l'API.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Board/T-007 observabilité.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "CLAUDE.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Upload": {
+      "isPinned": false,
+      "isHidden": false,
+      "sortOrder": "custom",
+      "customOrder": []
+    },
+    "Templates": {
+      "isPinned": false,
+      "isHidden": false,
+      "sortOrder": "custom",
+      "customOrder": [
+        "Tache Board.md"
+      ]
+    },
+    "Templates/Tache Board.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Wiki": {
+      "isPinned": false,
+      "isHidden": false,
+      "sortOrder": "custom",
+      "customOrder": [
+        "Cahier des charges.md",
+        "Contrat API.md",
+        "Design system.md",
+        "Fonctionnement du vault.md",
+        "Liens utiles.md",
+        "Mascotte Tom.md",
+        "Modele de donnees.md",
+        "Strategie de synchronisation.md"
+      ]
+    },
+    "Wiki/Cahier des charges.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Wiki/Contrat API.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Wiki/Design system.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Wiki/Fonctionnement du vault.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Wiki/Liens utiles.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Wiki/Mascotte Tom.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Wiki/Modele de donnees.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Wiki/Strategie de synchronisation.md": {
+      "isPinned": false,
+      "isHidden": false
+    }
+  },
+  "pinnedFiles": [],
+  "showHidden": false,
+  "newItemPlacement": "top",
+  "persistOrderOnCreateDelete": true,
+  "debugMode": false
+}

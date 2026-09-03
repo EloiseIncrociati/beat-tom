@@ -22,31 +22,34 @@ views:
       and:
         - file.inFolder("Board")
         - note.type == "feature"
+    order:
+      - id
+      - platform
+      - lot
+      - priority
     groupByProperty: note.status
     swimlaneProperty: note.lot
     quickAddFolder: Board
     wrapPropertyValues: false
     columnOrders:
-      - Roadmap
-      - To Do
-      - Doing
-      - Done
+      note.status:
+        - Done
+        - Roadmap
+        - To Do
     columnColors:
-      Doing: yellow
-      Done: green
-      Uncategorized: red
-    cardOrders: {}
-    order:
-      - note.id
-      - note.platform
-      - note.lot
-      - note.priority
+      note.status: {}
+    cardOrders:
+      note.status: {}
   - type: kanban-view
     name: Bugs
     filters:
       and:
         - file.inFolder("Board")
         - note.type == "bug"
+    order:
+      - id
+      - platform
+      - priority
     groupByProperty: note.status
     swimlaneProperty: note.priority
     quickAddFolder: Board
@@ -60,15 +63,15 @@ views:
       Done: green
       Uncategorized: red
     cardOrders: {}
-    order:
-      - note.id
-      - note.platform
-      - note.priority
   - type: kanban-view
     name: Priorite
     filters:
       and:
         - file.inFolder("Board")
+    order:
+      - id
+      - platform
+      - status
     groupByProperty: note.priority
     quickAddFolder: Board
     columnOrders:
@@ -78,25 +81,21 @@ views:
     columnColors:
       Uncategorized: red
     cardOrders: {}
-    order:
-      - note.id
-      - note.platform
-      - note.status
   - type: table
     name: Vue
     filters:
       and:
         - file.inFolder("Board")
     order:
-      - note.id
+      - id
       - file.name
-      - note.platform
-      - note.type
-      - note.lot
-      - note.status
-      - note.priority
-      - note.date
-      - note.assignee
+      - platform
+      - type
+      - lot
+      - status
+      - priority
+      - date
+      - assignee
     sort:
-      - property: note.id
+      - property: id
         direction: ASC
